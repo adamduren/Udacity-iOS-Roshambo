@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1788E85E1B95E013001B8204 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788E85D1B95E013001B8204 /* AppDelegate.swift */; };
-		1788E8601B95E013001B8204 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788E85F1B95E013001B8204 /* ViewController.swift */; };
+		1788E8601B95E013001B8204 /* PlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788E85F1B95E013001B8204 /* PlayController.swift */; };
 		1788E8631B95E013001B8204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1788E8611B95E013001B8204 /* Main.storyboard */; };
 		1788E8651B95E013001B8204 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1788E8641B95E013001B8204 /* Images.xcassets */; };
 		1788E8681B95E013001B8204 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1788E8661B95E013001B8204 /* LaunchScreen.xib */; };
 		1788E8741B95E013001B8204 /* RoshamboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788E8731B95E013001B8204 /* RoshamboTests.swift */; };
+		1788E87E1B95E1F2001B8204 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788E87D1B95E1F2001B8204 /* ResultController.swift */; };
+		1788E8801B965CE2001B8204 /* MovesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788E87F1B965CE2001B8204 /* MovesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		1788E8581B95E013001B8204 /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1788E85C1B95E013001B8204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1788E85D1B95E013001B8204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1788E85F1B95E013001B8204 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1788E85F1B95E013001B8204 /* PlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayController.swift; sourceTree = "<group>"; };
 		1788E8621B95E013001B8204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1788E8641B95E013001B8204 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1788E8671B95E013001B8204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1788E86D1B95E013001B8204 /* RoshamboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoshamboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1788E8721B95E013001B8204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1788E8731B95E013001B8204 /* RoshamboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboTests.swift; sourceTree = "<group>"; };
+		1788E87D1B95E1F2001B8204 /* ResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
+		1788E87F1B965CE2001B8204 /* MovesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				1788E85D1B95E013001B8204 /* AppDelegate.swift */,
-				1788E85F1B95E013001B8204 /* ViewController.swift */,
+				1788E85F1B95E013001B8204 /* PlayController.swift */,
 				1788E8611B95E013001B8204 /* Main.storyboard */,
 				1788E8641B95E013001B8204 /* Images.xcassets */,
 				1788E8661B95E013001B8204 /* LaunchScreen.xib */,
 				1788E85B1B95E013001B8204 /* Supporting Files */,
+				1788E87D1B95E1F2001B8204 /* ResultController.swift */,
+				1788E87F1B965CE2001B8204 /* MovesModel.swift */,
 			);
 			path = Roshambo;
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1788E8601B95E013001B8204 /* ViewController.swift in Sources */,
+				1788E8601B95E013001B8204 /* PlayController.swift in Sources */,
 				1788E85E1B95E013001B8204 /* AppDelegate.swift in Sources */,
+				1788E8801B965CE2001B8204 /* MovesModel.swift in Sources */,
+				1788E87E1B95E1F2001B8204 /* ResultController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
